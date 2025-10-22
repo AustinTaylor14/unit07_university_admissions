@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fawson University — Apply</title>
+  <meta name="description" content="Apply to Fawson University. Create your admissions account to track documents and receive updates.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- In production, compile scss/styles.scss to css/styles.css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  
+  </script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div class="brand">
+      <img 
+        src="img/logo-1x.png"
+        srcset="img/logo-1x.png 1x, img/logo-2x.png 2x, img/logo-3x.png 3x"
+        width="140" height="48" alt="Fawson University logo">
+      <div class="name">Fawson University</div>
+    </div>
+
+    <div class="navbar" role="navigation" aria-label="Main">
+      <button id="menuBtn" class="menu-toggle" aria-expanded="false" aria-controls="navsheet" aria-label="Open menu">☰</button>
+      <div id="navsheet">
+        <nav id="navlinks">
+          <a href="#students">Students</a>
+          <a href="#" aria-current="page">Apply</a>
+          <a href="#academics">Academics</a>
+          <a href="#services">Services</a>
+          <a href="#tuition">Tuition</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="page" id="maincontent">
+    <div class="page-title">
+      <h1>Apply</h1>
+      <p class="lede">Thank you for your interest in Fawson University! As part of the application process, you must create an account in order to track your admission documents and receive information from us. Sections with a red border are required information. If you have any questions, please contact the Admissions Office at <a href="tel:18005551234">1‑800‑555‑1234</a>.</p>
+    </div>
+
+    <section class="form-card" aria-labelledby="applyFormTitle">
+      <form id="applyForm" autocomplete="on" novalidate>
+        <fieldset class="span-2">
+          <legend id="applyFormTitle">Contact Information</legend>
+          <div class="form-grid">
+            <label><span>First Name</span>
+              <input name="firstName" type="text" required inputmode="text" autocomplete="given-name" placeholder="Jane">
+            </label>
+            <label><span>Last Name</span>
+              <input name="lastName" type="text" required inputmode="text" autocomplete="family-name" placeholder="Doe">
+            </label>
+            <label><span>Cell Phone</span>
+              <input name="phone" type="tel" required inputmode="tel" autocomplete="tel" placeholder="987-555-1234" pattern="^\d{3}[- ]?\d{3}[- ]?\d{4}$">
+            </label>
+            <label><span>Email</span>
+              <input name="email" type="email" required inputmode="email" autocomplete="email" placeholder="jane@example.com">
+            </label>
+
+            <label class="span-2"><span>Address</span>
+              <input name="address" type="text" autocomplete="street-address" placeholder="123 College Ave">
+            </label>
+            <label><span>City</span>
+              <input name="city" type="text" autocomplete="address-level2" placeholder="Provo">
+            </label>
+            <label><span>State</span>
+              <input name="state" type="text" autocomplete="address-level1" placeholder="UT">
+            </label>
+            <label><span>Zip Code</span>
+              <input name="zip" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="84604" pattern="^\d{5}(-\d{4})?$">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Communication Preferences</legend>
+          <div class="controls-inline" role="radiogroup" aria-label="Communication preferences">
+            <label><input type="radio" name="comm" value="text"> <span>Send Text Message Updates</span></label>
+            <label><input type="radio" name="comm" value="email"> <span>Send Email Updates</span></label>
+            <label><input type="radio" name="comm" value="mail"> <span>Snail Mail Updates</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Previous School Information</legend>
+          <div class="form-grid">
+            <label><span>School Type</span>
+              <select name="schoolType">
+                <option value="" selected>Please Select</option>
+                <option value="public">Public High School</option>
+                <option value="charter">Charter High School</option>
+                <option value="private">Private High School</option>
+                <option value="homeschool">Home School</option>
+                <option value="ged">GED Program</option>
+              </select>
+            </label>
+            <label><span>High School Graduation Date</span>
+              <input name="gradDate" type="date" autocomplete="bday">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Education Completed</legend>
+          <div class="controls-inline" aria-label="Education Completed">
+            <label><input type="checkbox" name="eduGED" value="GED"><span>GED</span></label>
+            <label><input type="checkbox" name="eduHS" value="High School Diploma"><span>High School Diploma</span></label>
+            <label><input type="checkbox" name="eduAA" value="Two Year Associates Degree"><span>Two Year Associates Degree</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Information</legend>
+          <div class="form-grid">
+            <label><span>Username <span class="helper">(5–10 letters)</span></span>
+              <input name="username" type="text" required pattern="[A-Za-z]{5,10}" placeholder="letters only">
+            </label>
+            <label><span>Password <span class="helper">(at least 6 characters)</span></span>
+              <input name="password" type="password" required minlength="6" autocomplete="new-password">
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit">Create my Account</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year">2025</span> &bull; Paul Cheney
+  </footer>
+</div>
+<script src="js/main.js" defer></script>
+</body>
+</html>

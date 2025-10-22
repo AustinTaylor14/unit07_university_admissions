@@ -1,0 +1,14 @@
+
+/* _medium.scss */
+@media (min-width: $break-med){
+  #navsheet{position:relative;inset:auto;transform:none;border-radius:0;box-shadow:none;padding:0}
+  .navbar{padding:.25rem 1rem .75rem}
+  .menu-toggle{display:none}
+  #navsheet nav{display:flex;gap:1.5rem;justify-content:center}
+  #navsheet a{padding:.75rem 0}
+  main{padding:2rem 1.25rem}
+  .form-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+  .span-2{grid-column:1/-1}
+}

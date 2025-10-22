@@ -1,0 +1,17 @@
+
+/* _large.scss */
+@media (min-width: $break-large){
+  .wrapper{background:linear-gradient(180deg, rgba(239,173,80,.08), transparent 280px)}
+  .brand .name{font-size:1.9rem}
+  #navsheet nav{justify-content:flex-end}
+  header .navbar{max-width:1200px;margin:0 auto}
+  main{max-width:1200px;margin:0 auto;padding:3rem 1rem}
+  .page{
+    grid-template-columns: 1fr minmax(520px, 680px);
+    grid-template-areas: "title form";
+    column-gap: 3rem;
+    align-items:start;
+  }
+  .page-title h1{font-size:2.1rem}
+  .lede{font-size:1.05rem}
+}
