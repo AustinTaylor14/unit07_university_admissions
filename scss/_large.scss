@@ -1,6 +1,6 @@
 
 /* _large.scss */
-@media (min-width: $break-large){
+@media (min-width: 60rem){
   .wrapper{background:linear-gradient(180deg, rgba(239,173,80,.08), transparent 280px)}
   .brand .name{font-size:1.9rem}
   #navsheet nav{justify-content:flex-end}

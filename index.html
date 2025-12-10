@@ -17,25 +17,27 @@
   </script>
 </head>
 <body>
-<div class="wrapper">
-  <header>
-    <div class="brand">
-      <img 
-        src="img/logo-1x.png"
+<div id="headerWrapper">
+  <header id="top">
+      <img src="img/logo-1x.png"
         srcset="img/logo-1x.png 1x, img/logo-2x.png 2x, img/logo-3x.png 3x"
         width="140" height="48" alt="Fawson University logo">
-      <div class="name">Fawson University</div>
+      <span>Fawson University</span>
+      <a href="#navlinks">&#9776;</a>
+    </header>
     </div>
 
-    <div class="navbar" role="navigation" aria-label="Main">
-      <button id="menuBtn" class="menu-toggle" aria-expanded="false" aria-controls="navsheet" aria-label="Open menu">☰</button>
-      <div id="navsheet">
+    <div id="navWrapper">
         <nav id="navlinks">
-          <a href="#students">Students</a>
-          <a href="#" aria-current="page">Apply</a>
-          <a href="#academics">Academics</a>
-          <a href="#services">Services</a>
-          <a href="#tuition">Tuition</a>
+          <a href="#top">&#10005</a>
+          <a href="#page-bottom" class="skip-link"></a>
+          <ul>
+          <li><a href="#students">Students</a></li>
+          <li class="active"><a href="#">Apply</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#tuition">Tuition</a></li>
+        </ul>
         </nav>
       </div>
     </div>
@@ -83,9 +85,9 @@
         <fieldset>
           <legend>Communication Preferences</legend>
           <div class="controls-inline" role="radiogroup" aria-label="Communication preferences">
-            <label><input type="radio" name="comm" value="text"> <span>Send Text Message Updates</span></label>
-            <label><input type="radio" name="comm" value="email"> <span>Send Email Updates</span></label>
-            <label><input type="radio" name="comm" value="mail"> <span>Snail Mail Updates</span></label>
+            <label><input type="radio" name="comm" value="text"> Send Text Message Updates</label>
+            <label><input type="radio" name="comm" value="email"> Send Email Updates</label>
+            <label><input type="radio" name="comm" value="mail"> Snail Mail Updates</label>
           </div>
         </fieldset>
 
@@ -111,9 +113,9 @@
         <fieldset>
           <legend>Education Completed</legend>
           <div class="controls-inline" aria-label="Education Completed">
-            <label><input type="checkbox" name="eduGED" value="GED"><span>GED</span></label>
-            <label><input type="checkbox" name="eduHS" value="High School Diploma"><span>High School Diploma</span></label>
-            <label><input type="checkbox" name="eduAA" value="Two Year Associates Degree"><span>Two Year Associates Degree</span></label>
+            <label><input type="checkbox" name="eduGED" value="GED">GED</label>
+            <label><input type="checkbox" name="eduHS" value="High School Diploma">High School Diploma</label>
+            <label><input type="checkbox" name="eduAA" value="Two Year Associates Degree">Two Year Associates Degree</label>
           </div>
         </fieldset>
 
